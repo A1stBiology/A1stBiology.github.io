@@ -200,3 +200,10 @@ footer {
   .pathway { justify-content: start; }
   footer { flex-direction: column; }
 }
+
+/* Google Site principles, retained in the GitHub design */
+.principles { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin-top:3rem; }
+.principles article { border:1px solid var(--line); padding:1.8rem; background:rgba(255,255,255,.55); }
+.principles h3 { color:var(--forest); }
+.principles p { margin-bottom:0; color:var(--muted); }
+@media(max-width:700px) { .principles {grid-template-columns:1fr;} }
